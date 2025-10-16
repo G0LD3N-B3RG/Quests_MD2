@@ -1,88 +1,40 @@
-QUESTÃO 04 (bônus – 0,5 pontos) ( Arthur Fernandes, 2025 )
+# Projeto: Soluções de Questões de Matemática Discreta e Criptografia
 
-Com o código abaixo, complete as linhas 10, 14, 23, 36, 45, 72 e 78 que faltam para que o programa funcione corretamente, realizando a divisão modular e o cálculo da congruência H ≡ G (mod Zn) seguido de a^x mod n1, aplicando o Pequeno Teorema de Fermat ou o Teorema de Euler, conforme o caso.
+## Autor
+- **Nome**: Gabriel Goldenberg Moita
+- **Matrícula**: 211061752
 
-#include <stdio.h>
+## Descrição Geral
+Este repositório contém soluções implementadas em C para questões de disciplinas relacionadas a Matemática Discreta, Teoria dos Números e Criptografia. Cada questão é resolvida com código funcional, comentários didáticos e validações para facilitar a execução e compreensão. O foco é em algoritmos como MDC, inverso modular, potência modular e implementações RSA com Pollard Rho.
 
-#ifdef _WIN32
-#include <windows.h>
-#endif
+Para compilar e executar:
+- Use GCC: `gcc -o programa arquivo.c`
+- Execute: `./programa`
+- Testes incluem exemplos hardcoded para verificação.
 
-// Função para calcular o máximo divisor comum (MDC) com exibição dos passos
-int mdcComPassos(int a, int b) {
-    int resto;
-    while ([l] != 0) {
-        resto = a % b;
-        printf("Algoritmo de Euclides: %d mod %d = %d\n", a, b, resto);
-        a = b;
-        b = [2];
-    }
-    return a;
-}
+## Estrutura do Repositório
+- **quest1.c**: [Breve descrição, se aplicável – ex: Chaves Periódicas com MMC]
+- **quest2.c**: [Breve descrição]
+- **quest3.c**: [Breve descrição – ex: Razão de Eficiência com fatoração prima]
+- **quest4/**: Diretório para a Questão 4 (bônus), dividida em duas partes para modularidade:
+  - **quest4_1.c**: Implementa divisão modular (H ≡ G mod Zn) usando inverso modular via Euclides estendido. Inclui passos didáticos do MDC e prints de cálculos.
+  - **quest4_2.c**: Computa a^x mod n1 com potência modular otimizada (binária). Integra com quest4_1 para fluxo completo, aplicando Fermat/Euler implicitamente via redução (se coprimo).
+- **Outros arquivos**: README.md (este), testes ou exemplos.
 
-int inversoModular(int a, int m) {
-    int m0 = m, t, q;
-    int x0 = 0, x1 = 1;
-    int A = a, B = m;
+## Questão 4: Detalhes da Divisão
+A **Questão 4 (bônus – 0,5 pontos)** é dividida em **quest4_1** e **quest4_2** para separar responsabilidades e facilitar depuração:
+- **quest4_1**: Foca na divisão modular H ≡ G (mod Zn). Calcula o inverso de G mod Zn (se existe, i.e., MDC=1) e multiplica por H, mostrando passos do Euclides.
+- **quest4_2**: Aplica potência modular no resultado (a^x mod n1), usando exponenciação binária para eficiência. Não aplica Fermat/Euler explicitamente (sem redução de expoente), mas o método é compatível.
 
-    [3](a,m);
+Exemplo de uso (Questão 4):  
+Entrada: H=7, G=3, Zn=11, x=10, n1=13  
+Saída esperada: Inverso=4, a=6 (7/3 mod 11), resultado=4 (6^10 mod 13=4).
 
-    while (m != 0) {
-        q = a / m;
-        t = m;
-        m = a % m;
-        a = t;
+## Como Contribuir ou Testar
+1. Clone o repo: `git clone [URL]`
+2. Compile arquivos individuais.
+3. Rode com inputs de teste para validar.
+4. Issues/PRs bem-vindos para melhorias!
 
-        t = x0;
-        x0 = x1 - q * x0;
-        x1 = t;
-    }
-    if (x1 < 0) {
-        [4] += m0;
-    }
-    printf("\nSubstituindo, temos que o inverso de %d em %d é %d.\n\n", A, B, x1);
-    return x1;
-}
-
-int powMod(int base, int exp, int mod) {
-    long long res = 1;
-    long long b = base % mod;
-    while (exp > 0) {
-        if ([5])
-            res = (res * b) % mod;
-        b = (b * b) % mod;
-        exp >>= 1;
-    }
-    return (int)res;
-}
-
-int main() {
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-#endif
-
-    int H, G, Zn, x, n1;
-
-    printf("Insira H: ");
-    scanf("%d", &H);
-    printf("Insira G: ");
-    scanf("%d", &G);
-    printf("Insira Zn: ");
-    scanf("%d", &Zn);
-    printf("Insira x: ");
-    scanf("%d", &x);
-    printf("Insira n1: ");
-    scanf("%d", &n1);
-    printf("\n");
-
-    int inverso = [6](G,Zn);
-    int a = (H * inverso) % Zn;
-
-    printf("Fazendo a multiplicação modular: %d * %d mod %d === %d\n", H, inverso, Zn, a);
-    printf(" Sendo %d o inverso de %d.\n", inverso, G);
-
-    int resultado = [7](a,x,n1);
-    printf("Valor final da congruência: %d\n", resultado);
-
-    return 0;
-}# Quests_MD2
+## Licença
+MIT License – Livre para uso educacional.

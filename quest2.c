@@ -1,8 +1,8 @@
 /*
  * Programa Chaves Periodicas
  * 
- * Nome: [Seu Nome Aqui]
- * Matricula: [Sua Matricula Aqui]
+ * Nome: [Gabriel Goldenbeg Moita]
+ * Matricula: [211061752]
  * 
  * Este programa resolve o problema das "Chaves Periodicas", inspirado no problema
  * das "Cigarras Periodicas" (Beecrowd 2660). Calcula o primeiro ano futuro (>0)
