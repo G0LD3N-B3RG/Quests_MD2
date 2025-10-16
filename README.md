@@ -85,4 +85,4 @@ int main() {
     printf("Valor final da congruência: %d\n", resultado);
 
     return 0;
-}
+}# Quests_MD2
