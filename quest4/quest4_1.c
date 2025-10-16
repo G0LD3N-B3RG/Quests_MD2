@@ -1,13 +1,12 @@
 /*
 QUESTÃO 4 PARTE 1 (EXTRA)
-Aluno: Gabriel Goldenberg Moita
-Matrícula: 211061752
+Aluno: [Gabriel Goldenberg Moita]
+Matrícula: [211061752]
 
 ====================================================
     RESPOSTA NO COMENTÁRIO AO FINAL DO CÓDIGO!!
 ====================================================
 */
-
 
 #include <stdio.h>
 

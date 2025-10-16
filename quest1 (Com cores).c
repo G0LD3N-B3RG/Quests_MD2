@@ -4,8 +4,9 @@
 #include <ctype.h>
 
 /* ============================================================================
-   TRABALHO: SISTEMA RSA COMPLETO COM POLLARD RHO
-   ALUNO: [Gabriel Goldenberg Moita] - MATRÍCULA: 211061752
+   SISTEMA RSA COMPLETO COM POLLARD RHO
+   ALUNO: [Gabriel Goldenberg Moita]
+   MATRÍCULA: [211061752]
    ============================================================================ */
 
 /* ============================================================================

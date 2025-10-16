@@ -1,10 +1,10 @@
 /*
 QUESTÃO 4 PARTE 2 (EXTRA)
-Aluno: Gabriel Goldenberg Moita
-Matrícula: 211061752
+Aluno: [Gabriel Goldenberg Moita]
+Matrícula: [211061752]
 
 ==========================================
-    RESPOSTAS V ou F NO quest4_VF!
+    RESPOSTAS V ou F NO quest4_2VF!
 ==========================================
 
 Explicação do código:
