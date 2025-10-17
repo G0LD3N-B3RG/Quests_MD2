@@ -13,11 +13,10 @@ Para compilar e executar:
 - Testes incluem exemplos hardcoded para verificação.
 
 ## Estrutura do Repositório
-- **quest1.c**: [Breve descrição, se aplicável – ex: Chaves Periódicas com MMC]
-- **quest2.c**: [Breve descrição]
-- **quest3.c**: [Breve descrição – ex: Razão de Eficiência com fatoração prima]
-- **quest4.c**: Implementa divisão modular (H ≡ G mod Zn) usando inverso modular via Euclides estendido. Inclui passos didáticos do MDC e prints de cálculos;
-  computa a^x mod n1 com potência modular otimizada (binária). Integra com quest4_1 para fluxo completo, aplicando Fermat/Euler implicitamente via redução (se coprimo).
+- **quest1.c**
+- **quest2.c**
+- **quest3.c**
+- **quest4.c**
 - **Outros arquivos**: README.md (este).
 
 ## Licença
