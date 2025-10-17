@@ -19,6 +19,7 @@ Para compilar e executar:
 - **quest4/**: Diretório para a Questão 4 (bônus), dividida em duas partes para modularidade:
   - **quest4_1.c**: Implementa divisão modular (H ≡ G mod Zn) usando inverso modular via Euclides estendido. Inclui passos didáticos do MDC e prints de cálculos.
   - **quest4_2.c**: Computa a^x mod n1 com potência modular otimizada (binária). Integra com quest4_1 para fluxo completo, aplicando Fermat/Euler implicitamente via redução (se coprimo).
+  - **quest4_VF.txt**: Respostas referentes a quest4_2. 
 - **Outros arquivos**: README.md (este), testes ou exemplos.
 
 ## Questão 4: Detalhes da Divisão
@@ -29,12 +30,6 @@ A **Questão 4 (bônus – 0,5 pontos)** é dividida em **quest4_1** e **quest4_
 Exemplo de uso (Questão 4):  
 Entrada: H=7, G=3, Zn=11, x=10, n1=13  
 Saída esperada: Inverso=4, a=6 (7/3 mod 11), resultado=4 (6^10 mod 13=4).
-
-## Como Contribuir ou Testar
-1. Clone o repo: `git clone [URL]`
-2. Compile arquivos individuais.
-3. Rode com inputs de teste para validar.
-4. Issues/PRs bem-vindos para melhorias!
 
 ## Licença
 MIT License – Livre para uso educacional.
