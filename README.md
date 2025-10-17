@@ -9,8 +9,6 @@ Este repositório contém soluções implementadas em C para questões de discip
 
 Para compilar e executar:
 - Use GCC: `gcc -o programa arquivo.c`
-- Execute: `./programa`
-- Testes incluem exemplos hardcoded para verificação.
 
 ## Estrutura do Repositório
 - **quest1.c**
